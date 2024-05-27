@@ -169,6 +169,6 @@ TEST(Smirnova_Tasks, swimming_pool) {
         * 1000;
 
     ASSERT_DOUBLE_EQ(
-        SwimmingPoolSolve(3, 1, 1000,
+        SwimmingPoolTask(3, 1, 1000,
         2000), fencePrice + areaPrice);
 }
