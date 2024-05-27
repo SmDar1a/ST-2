@@ -16,7 +16,7 @@ TEST(Smirnova_Test_Circle, radius_constructor) {
     Circle circle4(2);
     EXPECT_DOUBLE_EQ(2, circle4.getRadius());
     Circle circle5(1);
-    EXPECT_DOUBLE_EQ(1, circle5.getRadius());            
+    EXPECT_DOUBLE_EQ(1, circle5.getRadius());
 }
 
 TEST(Smirnova_Test_Circle, area_constructor) {
@@ -29,7 +29,7 @@ TEST(Smirnova_Test_Circle, area_constructor) {
     Circle circle4(11);
     EXPECT_DOUBLE_EQ(11 * 11 * PI, circle4.getArea());
     Circle circle5(0);
-    EXPECT_DOUBLE_EQ(0 * 0 * PI, circle5.getArea());                
+    EXPECT_DOUBLE_EQ(0 * 0 * PI, circle5.getArea());
 }
 
 TEST(Smirnova_Test_Circle, ference_constructor) {
@@ -42,7 +42,7 @@ TEST(Smirnova_Test_Circle, ference_constructor) {
     Circle circle4(20);
     EXPECT_DOUBLE_EQ(20 * 2 * PI, circle4.getFerence());
     Circle circle5(30);
-    EXPECT_DOUBLE_EQ(30 * 2 * PI, circle5.getFerence());                
+    EXPECT_DOUBLE_EQ(30 * 2 * PI, circle5.getFerence());
 }
 
 TEST(Smirnova_Test_Circle, radius_setter) {
@@ -50,7 +50,7 @@ TEST(Smirnova_Test_Circle, radius_setter) {
     Circle circle2;
     Circle circle3;
     Circle circle4;
-    Circle circle5;            
+    Circle circle5;
     circle1.setRadius(10);
     circle2.setRadius(0);
     circle3.setRadius(15);
@@ -68,7 +68,7 @@ TEST(Smirnova_Test_Circle, area_setter) {
     Circle circle2;
     Circle circle3;
     Circle circle4;
-    Circle circle5;            
+    Circle circle5;
     circle1.setArea(10);
     circle2.setArea(0);
     circle3.setArea(15);
@@ -86,7 +86,7 @@ TEST(Smirnova_Test_Circle, ference_setter) {
     Circle circle2;
     Circle circle3;
     Circle circle4;
-    Circle circle5;            
+    Circle circle5;
     circle1.setFerence(10);
     circle2.setFerence(0);
     circle3.setFerence(15);
@@ -109,12 +109,12 @@ TEST(Smirnova_Test_Circle, check_area_after_setting_radius) {
     Circle circle4;
     circle4.setRadius(2);
     Circle circle5;
-    circle5.setRadius(3);                
+    circle5.setRadius(3);
     EXPECT_DOUBLE_EQ(20 * 20 * PI, circle1.getArea());
     EXPECT_DOUBLE_EQ(0 * 0 * PI, circle2.getArea());
     EXPECT_DOUBLE_EQ(15 * 15 * PI, circle3.getArea());
     EXPECT_DOUBLE_EQ(2 * 2 * PI, circle4.getArea());
-    EXPECT_DOUBLE_EQ(3 * 3 * PI, circle5.getArea());                
+    EXPECT_DOUBLE_EQ(3 * 3 * PI, circle5.getArea());
 }
 
 TEST(Smirnova_Test_Circle, set_radius_check_ferecne) {
@@ -127,12 +127,12 @@ TEST(Smirnova_Test_Circle, set_radius_check_ferecne) {
     Circle circle4;
     circle4.setRadius(2);
     Circle circle5;
-    circle5.setRadius(3);                
+    circle5.setRadius(3);
     EXPECT_DOUBLE_EQ(20 * 2 * PI, circle1.getFerence());
     EXPECT_DOUBLE_EQ(0 * 2 * PI, circle2.getFerence());
     EXPECT_DOUBLE_EQ(15 * 2 * PI, circle3.getFerence());
     EXPECT_DOUBLE_EQ(2 * 2 * PI, circle4.getFerence());
-    EXPECT_DOUBLE_EQ(3 * 2 * PI, circle5.getFerence());       
+    EXPECT_DOUBLE_EQ(3 * 2 * PI, circle5.getFerence());
 }
 
 TEST(Smirnova_Test_Circle, check_radius_after_settign_area) {
@@ -145,12 +145,12 @@ TEST(Smirnova_Test_Circle, check_radius_after_settign_area) {
     Circle circle4;
     circle4.setArea(2);
     Circle circle5;
-    circle5.setArea(3);                
+    circle5.setArea(3);
     EXPECT_DOUBLE_EQ(sqrt(20 / PI), circle1.getRadius());
     EXPECT_DOUBLE_EQ(sqrt(0 / PI), circle2.getRadius());
     EXPECT_DOUBLE_EQ(sqrt(15 / PI), circle3.getRadius());
     EXPECT_DOUBLE_EQ(sqrt(2 / PI), circle4.getRadius());
-    EXPECT_DOUBLE_EQ(sqrt(3 / PI), circle5.getRadius());        
+    EXPECT_DOUBLE_EQ(sqrt(3 / PI), circle5.getRadius());
 }
 
 TEST(Smirnova_Tasks, earth_and_rope_task) {
