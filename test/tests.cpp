@@ -159,7 +159,7 @@ TEST(Smirnova_Tasks, earth_and_rope_task) {
     double actualResultMeters = (startRopeMeters + 1)
     / 2 / PI - earthRadiusMeters;
 
-    EXPECT_DOUBLE_EQ(EarthAndRopeSolve(1)
+    EXPECT_DOUBLE_EQ(EarthAndRopeTask(1)
     , actualResultMeters);
 }
 
