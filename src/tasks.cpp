@@ -3,7 +3,7 @@
 
 double earthRadius = 6378100;
 
-double EarthAndRopeSolve(double rope_length) {
+double EarthAndRopeTask(double rope_length) {
     Circle earth(earthRadius);
     Circle rope;
     rope.setFerence(earth.getFerence() + rope_length);
